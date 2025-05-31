@@ -1,0 +1,27 @@
+header, body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+strong {
+    color: red;
+}
+
+input {
+    width: auto; height: 35px;
+}
+
+form {
+    border: solid gray 2px;
+}
+    
+table {
+    margin-left: auto; 
+    margin-right: auto; 
+}
+            
+td, th {
+    border: solid;
+}

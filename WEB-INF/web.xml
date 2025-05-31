@@ -1,0 +1,105 @@
+<web-app>
+    <display-name>Project 4 application</display-name>
+    
+    <description>Multi-tier application</description>
+
+    <welcome-file-list>
+        <welcome-file>authentication.html</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>AUTHENTICATE</servlet-name>
+        <description>
+            Handles SQL requests for credentials.
+        </description>
+        <servlet-class>AuthenticationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AUTHENTICATE</servlet-name>
+        <url-pattern>/authentication</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ROOT</servlet-name>
+        <description>
+            Handles SQL requests for root level users.
+        </description>
+        <servlet-class>RootUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ROOT</servlet-name>
+        <url-pattern>/rootHome</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CLIENT</servlet-name>
+        <description>
+            Handles SQL requests for client level users.
+        </description>
+        <servlet-class>ClientUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CLIENT</servlet-name>
+        <url-pattern>/clientHome</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SUPPLIER</servlet-name>
+        <description>
+            Handles SQL requests for supplier inserts.
+        </description>
+        <servlet-class>SuppliersInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SUPPLIER</servlet-name>
+        <url-pattern>/AddSuppliersRecord</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PARTS</servlet-name>
+        <description>
+            Handles SQL requests for parts inserts.
+        </description>
+        <servlet-class>PartsInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PARTS</servlet-name>
+        <url-pattern>/AddPartsRecord</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>JOBS</servlet-name>
+        <description>
+            Handles SQL requests for jobs inserts.
+        </description>
+        <servlet-class>JobsInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JOBS</servlet-name>
+        <url-pattern>/AddJobsRecord</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SHIPMENTS</servlet-name>
+        <description>
+            Handles SQL requests for shipments inserts.
+        </description>
+        <servlet-class>ShipmentsInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SHIPMENTS</servlet-name>
+        <url-pattern>/AddShipmentsRecord</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ACCOUNTANT</servlet-name>
+        <description>
+            Handles SQL requests for accountant level users.
+        </description>
+        <servlet-class>AccountantUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ACCOUNTANT</servlet-name>
+        <url-pattern>/accountantHome</url-pattern>
+    </servlet-mapping>
+</web-app>
