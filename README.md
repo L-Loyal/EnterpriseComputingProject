@@ -39,7 +39,6 @@ The accountant user interface allows the user to execute a list of stored proced
 - CSS
 - JSP
 - XML
-- Servlets
 
 # How to run
 
