@@ -1,7 +1,6 @@
 # EnterpriseComputingProject
 
-This project is a three tier application that grants the user access to a dabatase depending on their credentials.
-The kind of operations the user is able to peform are based on what type of user they are.
+This project is a three tier application that grants the user access to a database depending on their credentials. The kind of operations the user is able to perform are based on what type of user they are. 
 
 # Types of users
 
