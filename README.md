@@ -27,4 +27,24 @@ Has execute rights to the database.
 
 The accountant user interface allows the user to execute a list of stored procedures.
 
-# How to set up.
+# Tools / Technologies
+
+- Tomcat
+- Java
+- SQL
+- JavaScript
+- JQuery
+- MySQL
+- HTML
+- CSS
+- JSP
+- XML
+- Servlets
+
+# How to run
+
+Note: you must have Apache Tomcat, a Java JDK, and MySQL installed.
+
+1. Put the files from this repository into a single folder.
+2. Put that folder into the webapps folder inside the Tomcat folder in your computer.
+3. 
