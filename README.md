@@ -47,4 +47,10 @@ Note: you must have Apache Tomcat, a Java JDK, and MySQL installed.
 
 1. Put the files from this repository into a single folder.
 2. Put that folder into the webapps folder inside the Tomcat folder in your computer.
-3. 
+3. Create the project4 and credentialsdb databases in MySQL by using the statements found in the databases.sql file.
+4. Create the users (except root) for the project database in MySQL (you can use the same credentials found in the property files).
+5. (Optional) If you choose to make the users have different credentials from the ones found in the properties, make sure to update the files accordingly.
+6. Check the file path in fileInputStream statements link to the property files properly in your system.
+
+I kept the original names for the database and folder. You can change them but it would require you to also change the property files to get to the correct database.
+The MySQL port number is set to 3306, you may need to change that in the property files if you don't have it set to default for MySQL.
